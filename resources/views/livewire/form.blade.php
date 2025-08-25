@@ -3,7 +3,12 @@
 
     {{ json_encode($this->data) }}
 
-    <x-filament::button type="submit">
-        Submit
-    </x-filament::button>
+    <div class="flex items-center gap-3">
+        <x-filament::button type="button" wire:click="search">
+            Search
+        </x-filament::button>
+        <x-filament::button type="submit">
+            Submit
+        </x-filament::button>
+    </div>
 </form>
